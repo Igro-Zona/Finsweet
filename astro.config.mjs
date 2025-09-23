@@ -31,5 +31,8 @@ export default defineConfig({
 		},
 
 		plugins: [tailwindcss()],
+		esbuild: {
+			legalComments: "none",
+		},
 	},
 });
