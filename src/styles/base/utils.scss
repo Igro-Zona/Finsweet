@@ -1,5 +1,10 @@
 @use "../helpers" as *;
 
+.no-transition,
+.no-transition * {
+	transition: none !important;
+}
+
 .h0,
 .h1,
 .h2,
@@ -63,13 +68,12 @@
 	padding-inline: var(--wrapper-padding-x);
 }
 
-.no-transition,
-.no-transition * {
-	transition: none !important;
-}
-
 .visually-hidden {
 	@include visually-hidden;
+}
+
+.is-lock {
+	overflow: hidden;
 }
 
 .hidden-mobile {
@@ -82,14 +86,4 @@
 	@include mobile-above {
 		display: none !important;
 	}
-}
-
-.visible-tablet {
-	@include tablet-above {
-		display: none !important;
-	}
-}
-
-.is-lock {
-	overflow: hidden;
 }

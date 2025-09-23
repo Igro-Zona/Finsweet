@@ -85,7 +85,7 @@ const rules = {
 	"unit-no-unknown": true,
 	"alpha-value-notation": ["number", { severity: "warning" }],
 	"at-rule-allowed-list": null,
-	"at-rule-disallowed-list": ["import"],
+	"at-rule-disallowed-list": null,
 	"at-rule-empty-line-before": [
 		"always",
 		{
