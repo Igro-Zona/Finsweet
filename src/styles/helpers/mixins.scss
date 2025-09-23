@@ -1,0 +1,43 @@
+@use "sass:math";
+@use "functions" as *;
+@use "media" as *;
+
+@mixin hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@mixin show {
+	opacity: 1;
+	visibility: visible;
+}
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+@mixin rectangle($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin visually-hidden {
+	position: absolute !important;
+	overflow: hidden !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: 1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+}
+
+@mixin font-variable($max, $med, $min) {
+	font-size: fluid-small($med, $min);
+
+	@include laptop-above {
+		font-size: fluid-big($max, $med);
+	}
+}

@@ -1,0 +1,95 @@
+@use "../helpers" as *;
+
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	color: var(--color-black);
+	font-family: var(--font-family-accent);
+	font-weight: 700;
+}
+
+.h0 {
+	line-height: 1.1428;
+
+	@include font-variable(64, 56, 48);
+}
+
+.h1 {
+	line-height: 1.3333;
+
+	@include font-variable(56, 48, 36);
+}
+
+.h2 {
+	line-height: 1.3333;
+
+	@include font-variable(48, 36, 28);
+}
+
+.h3 {
+	line-height: 1.2857;
+
+	@include font-variable(36, 28, 24);
+}
+
+.h4 {
+	line-height: 1.3333;
+
+	@include font-variable(28, 24, 20);
+}
+
+.h5 {
+	line-height: 1.6;
+
+	@include font-variable(24, 20, 16);
+}
+
+.h6 {
+	line-height: 1.5;
+
+	@include font-variable(20, 16, 14);
+}
+
+.wrapper {
+	--wrapper-width: #{fluid-big(1440, 1130)};
+	--wrapper-padding-x: 16px;
+
+	max-width: calc(var(--wrapper-width) + var(--wrapper-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--wrapper-padding-x);
+}
+
+.no-transition,
+.no-transition * {
+	transition: none !important;
+}
+
+.visually-hidden {
+	@include visually-hidden;
+}
+
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
+}
+
+.visible-tablet {
+	@include tablet-above {
+		display: none !important;
+	}
+}
+
+.is-lock {
+	overflow: hidden;
+}

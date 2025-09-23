@@ -5,10 +5,9 @@ dist/
 .stylelintcache
 # dependencies
 node_modules/
+package-lock.json
 # logs
 npm-debug.log*
 # environment variables
 .env
 .env.production
-# text files
-*.txt
