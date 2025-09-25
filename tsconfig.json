@@ -7,13 +7,14 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 		"paths": {
-			"@": ["src/*"],
+			"@/*": ["src/*"],
 			"@app/*": ["src/app/*"],
 			"@assets/*": ["src/app/assets/*"],
 			"@fonts/*": ["src/app/assets/fonts/*"],
 			"@images/*": ["src/app/assets/images/*"],
 			"@svg/*": ["src/app/assets/svg/*"],
 			"@styles/*": ["src/app/styles/*"],
+			"@widgets/*": ["src/widgets/*"],
 			"@shared/*": ["src/shared/*"]
 		}
 	}

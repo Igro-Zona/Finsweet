@@ -23,6 +23,7 @@ export default defineConfig({
 				"@images": path.resolve(__dirname, "src/app/assets/images"),
 				"@svg": path.resolve(__dirname, "src/app/assets/svg"),
 				"@styles": path.resolve(__dirname, "src/app/styles"),
+				"@widgets": path.resolve(__dirname, "src/widgets"),
 				"@shared": path.resolve(__dirname, "src/shared"),
 			},
 		},
