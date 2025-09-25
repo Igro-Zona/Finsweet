@@ -3,7 +3,7 @@
 import settings from "./settings.js";
 import overrides from "./overrides.js";
 
-/** @type {import("./types").Config} */
+/** @type {import("./types.js").Config} */
 const config = {
 	...settings,
 	overrides: overrides,

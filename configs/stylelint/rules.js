@@ -2,7 +2,7 @@
 
 import orderRules from "./order-rules.js";
 
-/** @type {import("./types").Rules} */
+/** @type {import("./types.js").Rules} */
 const rules = {
 	"order/properties-order": orderRules,
 

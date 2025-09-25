@@ -4,7 +4,7 @@ import plugins from "./plugins.js";
 import rules from "./rules.js";
 import overrides from "./overrides.js";
 
-/** @type {import("./types").Config} */
+/** @type {import("./types.js").Config} */
 const config = {
 	plugins: plugins,
 	fix: true,

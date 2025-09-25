@@ -1,6 +1,6 @@
 // @ts-check
 
-import { stylelintConfig } from "./config/index.js";
+import { stylelintConfig } from "./configs/index.js";
 
 /** @type {import('stylelint').Config} */
 export default stylelintConfig;

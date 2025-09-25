@@ -17,16 +17,13 @@ export default defineConfig({
 		resolve: {
 			alias: {
 				"@": path.resolve(__dirname, "src"),
-				"@assets": path.resolve(__dirname, "src/assets"),
-				"@fonts": path.resolve(__dirname, "src/assets/fonts"),
-				"@images": path.resolve(__dirname, "src/assets/images"),
-				"@svg": path.resolve(__dirname, "src/assets/svg"),
-				"@blocs": path.resolve(__dirname, "src/blocs"),
-				"@components": path.resolve(__dirname, "src/blocs/components"),
-				"@elements": path.resolve(__dirname, "src/blocs/elements"),
-				"@layouts": path.resolve(__dirname, "src/blocs/layouts"),
-				"@scripts": path.resolve(__dirname, "src/scripts"),
-				"@styles": path.resolve(__dirname, "src/styles"),
+				"@app": path.resolve(__dirname, "src/app"),
+				"@assets": path.resolve(__dirname, "src/app/assets"),
+				"@fonts": path.resolve(__dirname, "src/app/assets/fonts"),
+				"@images": path.resolve(__dirname, "src/app/assets/images"),
+				"@svg": path.resolve(__dirname, "src/app/assets/svg"),
+				"@styles": path.resolve(__dirname, "src/app/styles"),
+				"@shared": path.resolve(__dirname, "src/shared"),
 			},
 		},
 

@@ -2,7 +2,7 @@
 
 import scssRules from "./scss-rules.js";
 
-/** @type {import("./types").Rules} */
+/** @type {import("./types.js").Rules} */
 const astroRules = {
 	...scssRules,
 };

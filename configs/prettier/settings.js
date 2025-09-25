@@ -2,7 +2,7 @@
 
 import plugins from "./plugins.js";
 
-/** @type {import("./types").Settings} */
+/** @type {import("./types.js").Settings} */
 const settings = {
 	plugins: plugins,
 
